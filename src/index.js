@@ -5,12 +5,14 @@ import App from './App';
 import Navbar from './components/navbar/Navbar'
 import reportWebVitals from './reportWebVitals';
 import Mainview from './components/mainview/Mainview';
+import Social from './components/social/Social';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar />
     <Mainview />
+    <Social />
   </React.StrictMode>
 );
 

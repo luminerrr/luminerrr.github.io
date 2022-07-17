@@ -1,0 +1,14 @@
+.social-wrapper{
+    padding-top: 4rem;
+}
+
+.social-icon-wrapper{
+    border-radius: 16px;
+    background-color: black;
+    min-height: 3rem
+    
+}
+
+.social-icon{
+    text-align: center;
+}
