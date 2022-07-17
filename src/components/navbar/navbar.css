@@ -1,0 +1,17 @@
+/* Navbar */
+
+.header-text{
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+}
+
+.header-bar{
+    background-color: black;
+    height: 5rem;
+    padding: 0;
+    top: 0;
+}
