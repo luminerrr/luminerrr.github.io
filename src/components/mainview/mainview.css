@@ -13,12 +13,20 @@
 
 .main-header{
     font-size: 80px;
-    text-decoration: underline;
+    font-family: 'Peddana', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 130px;
 
 }
 
 .main-paragraph{
+    font-family: 'Perpetua', sans-serif;
     padding-top: 1rem;
+    font-style: normal;
+    font-weight: 400;
     font-size: 25px;
+    line-height: 29px;
 
 }

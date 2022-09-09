@@ -7,7 +7,11 @@ function NavigationBar(){
         <>
             <Navbar className="header-bar">
                 <Container>
-                    <h2 className="header-text">Kevin</h2>
+                    <Navbar.Brand className="header-text">Kevin</Navbar.Brand>
+                    <Navbar.Toggle />
+                    <Navbar.Collapse className="justify-content-end" />
+                    <Navbar.Brand className="header-link">About Me</Navbar.Brand>
+                    <Navbar.Brand className="header-link">My Projects</Navbar.Brand>
                 </Container>
             </Navbar>
         </>

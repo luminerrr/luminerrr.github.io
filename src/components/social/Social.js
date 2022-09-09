@@ -14,10 +14,10 @@ export default function Social(){
                     <a href='https://github.com/luminerrr' ><img src={githubIcon} alt='github' /></a>
                 </Col>
                 <Col className='social-icon'>
-                    <a href='https://www.instagram.com/kevinezra_/'><img src={igIcon} alt='github' /></a>
+                    <a href='https://www.instagram.com/kevinezra_/'><img src={igIcon} alt='instagram' /></a>
                 </Col>
                 <Col className='social-icon'>
-                    <a href='https://www.linkedin.com/in/kevinezra/'><img src={linkedinIcon} alt='github' /></a>
+                    <a href='https://www.linkedin.com/in/kevinezra/'><img src={linkedinIcon} alt='linkedin' /></a>
                 </Col>
             </Row>
         </Container>
