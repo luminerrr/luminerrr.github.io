@@ -6,11 +6,11 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
-    color: white;
+    color: white !important;
 }
 
 .header-bar{
-    background-color: black;
+    background-color: #3C3D3F;
     height: 5rem;
     padding: 0;
     top: 0;

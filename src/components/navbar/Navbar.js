@@ -7,7 +7,7 @@ function NavigationBar(){
         <>
             <Navbar className="header-bar">
                 <Container>
-                    <h2 className="header-text">Kevin</h2>
+                    <Navbar.Brand href="#" className="header-text">Kevin</Navbar.Brand>
                 </Container>
             </Navbar>
         </>
