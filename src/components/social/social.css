@@ -1,14 +1,19 @@
 .social-wrapper{
     padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
 }
 
 .social-icon-wrapper{
     border-radius: 16px;
-    background-color: black;
-    min-height: 3rem
+    background-color: #3C3D3F;
+    min-height: 2rem
     
 }
 
 .social-icon{
     text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
