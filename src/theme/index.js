@@ -2,12 +2,13 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   fonts: {
-    heading: `'Playfair Display', 'Lato', sans-serif`,
-    body: `'Playfair Display', 'Lato', sans-serif`,
+    heading: `'Playfair Display', sans-serif`,
+    body: `'Nunito','Nunito Variable', sans-serif`,
   },
   colors: {
     main_color: "#25282B",
     gray_text: "#828282",
+    yellow_text: "#FDC435",
   },
   textStyles: {
     paragraph: {
