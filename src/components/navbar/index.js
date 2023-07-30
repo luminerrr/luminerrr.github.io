@@ -9,6 +9,7 @@ export default function Navbar() {
         alignItems="center"
         px="36px"
         justifyContent="space-between"
+        zIndex={100}
       >
         <Text mb={0} fontSize="18px" fontWeight="700" color="main_color">
           Kevin Ezra

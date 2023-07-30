@@ -1,6 +1,7 @@
 import { Flex, Heading, Image, SimpleGrid, Text, } from "@chakra-ui/react";
 import UserLayout from "../../components/UserLayout";
 import mainPhoto from '../../assets/photo_bgyellow.png'
+import Projects from "../../components/projects";
 
 export default function Homepage(){
   return (
@@ -29,13 +30,13 @@ export default function Homepage(){
               creating dynamic and responsive web applications drives me to stay
               at the forefront of the latest web technologies and trends.
             </Text>
-            
           </Flex>
         </Flex>
         <Flex direction="row" justifyContent="center">
-          <Image src={mainPhoto} objectFit="cover" />
+          <Image src={mainPhoto} objectFit="cover" top='0' zIndex={5}/>
         </Flex>
       </SimpleGrid>
+      <Projects />
     </UserLayout>
   );
 }
