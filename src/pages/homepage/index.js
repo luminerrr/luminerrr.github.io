@@ -1,9 +1,10 @@
-import { Flex, Heading, Image, SimpleGrid, Text, } from "@chakra-ui/react";
+import { Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import UserLayout from "../../components/UserLayout";
-import mainPhoto from '../../assets/photo_bgyellow.png'
+import mainPhoto from "../../assets/photo_bgyellow.png";
 import Projects from "../../components/projects";
+import dummyData from "../../const/dummyData";
 
-export default function Homepage(){
+export default function Homepage() {
   return (
     <UserLayout>
       <SimpleGrid columns={2} mt="24px">
@@ -21,8 +22,13 @@ export default function Homepage(){
               Hello, my name is <br />
               Kevin Ezra{" "}
             </Heading>
-            <Text fontSize='24px' fontWeight='400' color='gray_text' textAlign='justify'>
-              I am a skilled fullstack web developer with a strong focus on
+            <Text
+              fontSize="24px"
+              fontWeight="400"
+              color="gray_text"
+              textAlign="justify"
+            >
+              I am a fullstack web developer with a strong focus on
               frontend development. With a keen eye for design and user
               experience, I excel at crafting visually appealing and intuitive
               interfaces, while also possessing the ability to seamlessly
@@ -33,10 +39,22 @@ export default function Homepage(){
           </Flex>
         </Flex>
         <Flex direction="row" justifyContent="center">
-          <Image src={mainPhoto} objectFit="cover" top='0' zIndex={5}/>
+          <Image src={mainPhoto} objectFit="cover" top="0" zIndex={5} />
         </Flex>
       </SimpleGrid>
-      <Projects />
+      <Flex direction="column" alignItems="center" mt="24px" id="project-view">
+        <Heading
+          fontSize="48px"
+          fontWeight="700"
+          boxShadow="0px 24px 15px -24px #FDC435"
+          pb="8px"
+        >
+          Projects
+        </Heading>
+        {dummyData.map((dummy) => (
+          <Projects data={dummy} />
+        ))}
+      </Flex>
     </UserLayout>
   );
 }
