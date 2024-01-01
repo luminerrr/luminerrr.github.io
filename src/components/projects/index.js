@@ -3,16 +3,44 @@ import showcase1 from "../../assets/showcase-1.png";
 
 export default function Projects({ data }) {
   return (
-    <Flex direction="row" bg="white" borderRadius="16px" mt="24px" p='36px'>
+    <Flex
+      direction={{ base: "column", lg: "row" }}
+      bg="white"
+      borderRadius="16px"
+      mt="24px"
+      p={{ base: "4px", md: "16px", lg: "36px" }}
+      alignItems="center"
+      justifyContent="center"
+      py={{ base: "12px" }}
+    >
       <Flex
         direction="column"
-        w="50%"
+        w={{ base: "100%", lg: "50%" }}
         justifyContent="center"
+        alignItems={{ base: "center", lg: "baseline" }}
         px="48px"
         gap="24px"
       >
-        <Heading textAlign="start">{data.name}</Heading>
-        <Text fontSize="18px" color="gray_text" textAlign="justify">
+        <Heading
+          textAlign="start"
+          fontSize={{
+            base: "24px",
+            lg: "48px",
+          }}
+        >
+          {data.name}
+        </Heading>
+        <Image
+          src={data.img_link}
+          objectFit="cover"
+          width={{ base: "40em" }}
+          display={{ lg: "none" }}
+        />
+        <Text
+          fontSize={{ base: "12px", lg: "18px" }}
+          color="gray_text"
+          textAlign="justify"
+        >
           {data.description}
         </Text>
         <Button
@@ -20,6 +48,8 @@ export default function Projects({ data }) {
           background="white"
           borderRadius="24px"
           width="fit-content"
+          fontSize={{ base: "12px", lg: "24px" }}
+          p={{ base: "12px", lg: "24px" }}
         >
           <Link href={data.link} isExternal>
             View Project
@@ -27,7 +57,15 @@ export default function Projects({ data }) {
         </Button>
       </Flex>
       <Flex direction="row" justifyContent="center" w="50%">
-        <Image src={data.img_link} objectFit='cover' width='400px'/>
+        <Image
+          src={data.img_link}
+          objectFit="cover"
+          width={{ lg: "80em" }}
+          display={{
+            base: "none",
+            lg: "block",
+          }}
+        />
       </Flex>
     </Flex>
   );

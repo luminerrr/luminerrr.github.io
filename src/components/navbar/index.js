@@ -1,4 +1,4 @@
-import { Flex, Link, Text } from "@chakra-ui/react"
+import { Flex, Link, Text } from "@chakra-ui/react";
 
 export default function Navbar() {
   return (
@@ -11,12 +11,17 @@ export default function Navbar() {
         justifyContent="space-between"
         zIndex={100}
       >
-        <Text mb={0} fontSize="18px" fontWeight="700" color="main_color">
+        <Text
+          mb={0}
+          fontSize={{ base: "12px", md: "16px", lg: "18px" }}
+          fontWeight="700"
+          color="main_color"
+        >
           Kevin Ezra
         </Text>
         <Flex direction="row" gap="48px">
           <Link
-            fontSize="18px"
+            fontSize={{ base: "12px", md: "16px", lg: "18px" }}
             fontWeight="500"
             color="main_color"
             _hover={{ color: "black" }}
@@ -25,7 +30,7 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            fontSize="18px"
+            fontSize={{ base: "12px", md: "16px", lg: "18px" }}
             fontWeight="500"
             color="main_color"
             _hover={{ color: "black" }}
@@ -34,7 +39,7 @@ export default function Navbar() {
             Projects
           </Link>
           <Link
-            fontSize="18px"
+            fontSize={{ base: "12px", md: "16px", lg: "18px" }}
             fontWeight="500"
             color="main_color"
             _hover={{ color: "black" }}
@@ -43,5 +48,6 @@ export default function Navbar() {
           </Link>
         </Flex>
       </Flex>
-    </>)
+    </>
+  );
 }

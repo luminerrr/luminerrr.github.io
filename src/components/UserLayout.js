@@ -6,7 +6,10 @@ export default function UserLayout({ children }) {
   return (
     <>
       <Navbar />
-      <Flex direction='column' mx='80px'>
+      <Flex
+        direction="column"
+        mx={{ base: "14px", sm: "24px", md: "48px", lg: "80px" }}
+      >
         {children}
       </Flex>
       <Footer />
