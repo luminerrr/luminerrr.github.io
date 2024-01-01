@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import { breakpoints } from "./breakpoints";
 
 const theme = extendTheme({
   fonts: {
@@ -18,6 +19,7 @@ const theme = extendTheme({
       letterSpacing: "0.005em",
     },
   },
+  breakpoints
 });
 
 export default theme;
