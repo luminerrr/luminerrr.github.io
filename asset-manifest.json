@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.f71bdb11.css",
-    "main.js": "/static/js/main.1c62329f.js",
+    "main.js": "/static/js/main.758c926d.js",
     "static/media/bcr.png": "/static/media/bcr.d3715b27adfd12a85af2.png",
     "static/media/secondhand.png": "/static/media/secondhand.2f9e2b6e1e46efd1cac4.png",
-    "static/media/showcase-1.png": "/static/media/showcase-1.f3c43c643d798b24c62d.png",
     "static/media/photo_bgyellow.png": "/static/media/photo_bgyellow.ac2be9a884d4ea336d72.png",
     "static/media/pituChat.png": "/static/media/pituChat.573adce60f614dcb608b.png",
     "static/media/playfair-display-latin-600-normal.woff": "/static/media/playfair-display-latin-600-normal.a5705d6220a07ea7ee05.woff",
@@ -74,10 +73,10 @@
     "static/media/playfair-display-vietnamese-600-normal.woff2": "/static/media/playfair-display-vietnamese-600-normal.f47d2bf04985852d5eaf.woff2",
     "index.html": "/index.html",
     "main.f71bdb11.css.map": "/static/css/main.f71bdb11.css.map",
-    "main.1c62329f.js.map": "/static/js/main.1c62329f.js.map"
+    "main.758c926d.js.map": "/static/js/main.758c926d.js.map"
   },
   "entrypoints": [
     "static/css/main.f71bdb11.css",
-    "static/js/main.1c62329f.js"
+    "static/js/main.758c926d.js"
   ]
 }
