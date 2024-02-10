@@ -3,13 +3,21 @@ import UserLayout from "../../components/UserLayout";
 import mainPhoto from "../../assets/photo_bgyellow.png";
 import Projects from "../../components/projects";
 import dummyData from "../../const/dummyData";
+import { motion } from "framer-motion";
 
 export default function Homepage() {
   return (
     <UserLayout>
       <SimpleGrid columns={{ base: 1, lg: 2 }} mt="24px">
         <Flex alignItems="center" direction={"column"}>
-          <Flex direction="column">
+          <Flex
+            direction="column"
+            as={motion.div}
+            initial={{ left: -300, opacity: 0 }}
+            animate={{ left: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            position={"relative"}
+          >
             <Text
               fontSize="20px"
               fontWeight="700"
@@ -41,8 +49,20 @@ export default function Homepage() {
             </Text>
           </Flex>
         </Flex>
-        <Flex direction={"row"} justifyContent="center">
+        <Flex
+          direction={"row"}
+          justifyContent="center"
+          as={motion.div}
+          initial={{ left: 300, opacity: 0 }}
+          animate={{ left: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          position={"relative"}
+        >
           <Image
+            as={motion.img}
+            justifySelf={"center"}
+            alignSelf="center"
+            whileHover={{ scale: 1.1 }}
             src={mainPhoto}
             objectFit="cover"
             top="0"
@@ -60,8 +80,8 @@ export default function Homepage() {
         >
           Projects
         </Heading>
-        {dummyData.map((dummy) => (
-          <Projects data={dummy} />
+        {dummyData.map((dummy, i) => (
+          <Projects data={dummy} key={i} sequence={i} />
         ))}
       </Flex>
     </UserLayout>

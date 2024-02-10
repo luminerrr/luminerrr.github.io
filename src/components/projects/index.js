@@ -1,9 +1,13 @@
 import { Button, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
-import showcase1 from "../../assets/showcase-1.png";
+import { motion } from "framer-motion";
 
-export default function Projects({ data }) {
+export default function Projects({ data, sequence }) {
   return (
     <Flex
+      as={motion.div}
+      initial={{ opacity: 0, left: sequence % 2 === 0 ? 80 : -80 }}
+      whileInView={{ opacity: 1, left: 0 }}
+      position={"relative"}
       direction={{ base: "column", lg: "row" }}
       bg="white"
       borderRadius="16px"
